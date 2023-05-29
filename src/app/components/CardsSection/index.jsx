@@ -6,7 +6,7 @@ const CardsSection = ({ items }) => {
             {
                 items.map(i => {
                     return (
-                        <div className={styles.item}>
+                        <div className={styles.item} key={i.description}>
                             <h3>{i.title}</h3>
                             <p className={styles.subtitle}>{i.subtitle}</p>
                             <p className={styles.amountTime}>{i.amountTime}</p>

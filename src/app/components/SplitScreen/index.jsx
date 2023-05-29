@@ -3,8 +3,8 @@ import HalfScreen from '../HalfScreen';
 import { useState } from 'react';
 
 const SplitScreen = ({ candidateToCompare, candidates, select, selectedCandidates, remove }) => {
-    if (!candidateToCompare) return;
     const [active, setActive] = useState(0);
+    if (!candidateToCompare) return;
     const rigthCompare = candidates[active];
     const hasSelected = selectedCandidates.find(sel => sel.id === rigthCompare.id);
     const hasSelectedMain = selectedCandidates.find(sel => sel.id === candidateToCompare.id);

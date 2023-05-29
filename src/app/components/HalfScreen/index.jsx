@@ -19,6 +19,7 @@ const HalfScreen = ({ candidateToCompare, right, setActive, active, maxCandidate
         <div className={`${styles.HalfScreen} ${!right && styles.left}`}>
             <header className={styles.header}>
                 <Image
+                    alt="Foto de perfil"
                     className={styles.photo}
                     src={candidateToCompare.photo}
                     width={100}
