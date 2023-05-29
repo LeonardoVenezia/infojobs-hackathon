@@ -1,0 +1,46 @@
+.HalfScreen {
+    width: 50vw;
+    padding: 16px;
+}
+
+.left {
+    border-radius: 0 32px 32px 0;
+    background-color: #fff;
+}
+
+.photo {
+    border-radius: 16px;
+}
+
+.header {
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.name {
+    padding-left: 16px;
+    font-size: 38px;
+}
+
+.subtitle {
+    margin-top: 16px;
+}
+
+.select {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #167db7;
+    color: #fff;
+    margin-top: 16px;
+}
+
+.remove {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ff6340;
+    color: #fff;
+    margin-top: 16px;
+}

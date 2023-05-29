@@ -1,0 +1,44 @@
+.candidatePhoto {
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.candidatePhotoSmall {
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+.candidatePhotoImg {
+    object-fit: cover;
+}
+
+.candidate {
+    background-color: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.candidateName {
+    padding-left: 8px;
+    z-index: 2;
+    font-size: medium;
+    color: #5ca4cd;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 200px;
+}
+
+.candidateNameSmall {
+    padding-left: 8px;
+    z-index: 2;
+    font-size: medium;
+    color: #5ca4cd;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100px;
+    font-size: 14px;
+}

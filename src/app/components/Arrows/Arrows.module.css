@@ -1,0 +1,15 @@
+.Arrows {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+.button {
+    padding: 5px 12px 8px;
+    margin-left: 8px;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+}

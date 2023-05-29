@@ -1,95 +1,74 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+'use client'
+import Image from 'next/image';
+import styles from './page.module.css';
+import { useEffect, useState } from 'react';
+import Card from './components/Card';
+import { mock } from './mock';
+import BottomList from './components/BottomList';
+import SplitScreen from './components/SplitScreen';
+import Modal from './components/Modal';
 
 export default function Home() {
+  const [candidates, setCandidates] = useState(mock);
+  const [selectedCandidates, setSelectedCandidates] = useState([]);
+  const [candidateToCompare, setCandidateToCompare] = useState(null);
+  const [openModal, setOpenModal] = useState(false)
+
+  const findCandidate = (id) => candidates.filter(c => c.id === id)[0];
+
+  const select = (id) => {
+    if (selectedCandidates.filter(c => c.id === id)[0]) return;
+    const newCandidate = findCandidate(id);
+    setSelectedCandidates([...selectedCandidates, newCandidate]);
+  }
+  const remove = (id) => {
+    const newCandidates = selectedCandidates.filter(c => c.id !== id);
+    setSelectedCandidates(newCandidates);
+  }
+  const compare = (id) => {
+    const newCandidate = findCandidate(id);
+    setCandidateToCompare(newCandidate);
+  }
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main >
+      <header className={styles.header}>
+        <div className={styles.headerContent}>
+          <Image src="/logo.png" alt="Logo" width={40} height={40} />
         </div>
-      </div>
+      </header>
+      <main className={styles.main}>
+        <h1 className={styles.title}>Candidatos para <span className={styles.searchName}>Fronend Developer</span></h1>
+        <section className={styles.candidates}>
+          {
+            candidates.map(candidate => {
+              return (
+                <Card
+                  key={`${candidate.name} ${candidate.lastname} ${candidate.photo}`}
+                  selectCandidate={() => select(candidate.id)}
+                  compareCandidate={() => compare(candidate.id)}
+                  src={candidate.photo}
+                  name={`${candidate.name} ${candidate.lastname}`}
+                />
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+              );
+            })
+          }
+        </section>
+      </main>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      <SplitScreen
+        candidateToCompare={candidateToCompare}
+        candidates={candidates}
+        select={select}
+        remove={remove}
+        selectedCandidates={selectedCandidates}
+      />
+      <BottomList
+        candidates={selectedCandidates}
+        remove={remove}
+        openModal={setOpenModal}
+      />
+      <Modal openModal={openModal} />
     </main>
   )
 }

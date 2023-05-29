@@ -1,0 +1,47 @@
+.CardsSection {
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+    overflow: auto;
+}
+
+.CardsSection::-webkit-scrollbar {
+  height: 4px; 
+}
+
+.CardsSection::-webkit-scrollbar-thumb {
+  background-color: #999;
+  border-radius: 4px;
+}
+
+.CardsSection::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.CardsSection::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+.item {
+    border: 1px solid #e2e5e6;
+    padding: 16px;
+    border-radius: 16px;
+    min-width: 320px;
+    height: 230px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: #fff;
+}
+
+.subtitle {
+    font-size: 14px;
+}
+
+.amountTime {
+    font-size: 14px;
+}
+
+.description {
+    font-size: 14px;
+    color: #999;
+}
