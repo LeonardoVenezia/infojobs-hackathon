@@ -4,8 +4,8 @@ Este proyecto es una nueva feature que ayuda al personal de selección tomar mej
 
 ## Deploy
 
-Se puede ingresar al proyecto en el siguiente link:  [infojobs-hackathon]
+Se puede ingresar al proyecto en el siguiente link:  [infojobs-hackathon](https://infojobs-hackathon-psi.vercel.app/)
 
 ## Levantar el proyecto
 
-Es un proyecto común de Next.js, basta con clonar el proyecto, instalar las dependencias y correr [npm run dev]
+Es un proyecto común de Next.js, basta con clonar el proyecto, instalar las dependencias y correr `npm run dev`
