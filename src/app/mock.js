@@ -57,7 +57,7 @@ export const mock = [
         },
         {
           company: 'Lorem Company',
-          position: 'Infojobs',
+          position: 'Frontend Developer',
           from: '08/2022',
           to: '05/2023',
           amountTime: '10 meses',
@@ -70,6 +70,14 @@ export const mock = [
           title: 'Master en Cosas',
           from: '03/20',
           to: '09/22',
+          stillStuding: false,
+          description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a sem ut ipsum convallis pharetra ac at neque. In porttitor, augue quis rhoncus tempor, nibh diam venenatis nunc, sit amet pulvinar diam sapien non dolor
+          Aenean tincidunt enim id rhoncus ornare. Donec eget tellus egestas.`
+        },
+        {
+          title: 'Licenciado en Cosas',
+          from: '03/14',
+          to: '09/19',
           stillStuding: false,
           description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a sem ut ipsum convallis pharetra ac at neque. In porttitor, augue quis rhoncus tempor, nibh diam venenatis nunc, sit amet pulvinar diam sapien non dolor
           Aenean tincidunt enim id rhoncus ornare. Donec eget tellus egestas.`
@@ -100,7 +108,25 @@ export const mock = [
         },
         {
           company: 'Lorem Company',
-          position: 'Infojobs',
+          position: 'Frontend Developer',
+          from: '08/2022',
+          to: '05/2023',
+          amountTime: '10 meses',
+          description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a sem ut ipsum convallis pharetra ac at neque. In porttitor, augue quis rhoncus tempor, nibh diam venenatis nunc, sit amet pulvinar diam sapien non dolor
+          Aenean tincidunt enim id rhoncus ornare. Donec eget tellus egestas.`
+        },
+        {
+          company: 'Lorem Company',
+          position: 'Frontend Developer',
+          from: '08/2022',
+          to: '05/2023',
+          amountTime: '10 meses',
+          description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a sem ut ipsum convallis pharetra ac at neque. In porttitor, augue quis rhoncus tempor, nibh diam venenatis nunc, sit amet pulvinar diam sapien non dolor
+          Aenean tincidunt enim id rhoncus ornare. Donec eget tellus egestas.`
+        },
+        {
+          company: 'Lorem Company',
+          position: 'Frontend Developer',
           from: '08/2022',
           to: '05/2023',
           amountTime: '10 meses',
@@ -143,7 +169,7 @@ export const mock = [
         },
         {
           company: 'Lorem Company',
-          position: 'Infojobs',
+          position: 'Frontend Developer',
           from: '08/2022',
           to: '05/2023',
           amountTime: '10 meses',
@@ -187,7 +213,7 @@ export const mock = [
         },
         {
           company: 'Lorem Company',
-          position: 'Infojobs',
+          position: 'Frontend Developer',
           from: '08/2022',
           to: '05/2023',
           amountTime: '10 meses',
@@ -230,7 +256,7 @@ export const mock = [
         },
         {
           company: 'Lorem Company',
-          position: 'Infojobs',
+          position: 'Frontend Developer',
           from: '08/2022',
           to: '05/2023',
           amountTime: '10 meses',
@@ -249,6 +275,30 @@ export const mock = [
         },
         {
           title: 'Licenciado en Cosas',
+          from: '03/14',
+          to: '09/19',
+          stillStuding: false,
+          description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a sem ut ipsum convallis pharetra ac at neque. In porttitor, augue quis rhoncus tempor, nibh diam venenatis nunc, sit amet pulvinar diam sapien non dolor
+          Aenean tincidunt enim id rhoncus ornare. Donec eget tellus egestas.`
+        },
+        {
+          title: 'Cursito de algo',
+          from: '03/14',
+          to: '09/19',
+          stillStuding: false,
+          description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a sem ut ipsum convallis pharetra ac at neque. In porttitor, augue quis rhoncus tempor, nibh diam venenatis nunc, sit amet pulvinar diam sapien non dolor
+          Aenean tincidunt enim id rhoncus ornare. Donec eget tellus egestas.`
+        },
+        {
+          title: 'Cursito de algo',
+          from: '03/14',
+          to: '09/19',
+          stillStuding: false,
+          description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a sem ut ipsum convallis pharetra ac at neque. In porttitor, augue quis rhoncus tempor, nibh diam venenatis nunc, sit amet pulvinar diam sapien non dolor
+          Aenean tincidunt enim id rhoncus ornare. Donec eget tellus egestas.`
+        },
+        {
+          title: 'Cursito de algo',
           from: '03/14',
           to: '09/19',
           stillStuding: false,
@@ -273,7 +323,34 @@ export const mock = [
         },
         {
           company: 'Lorem Company',
-          position: 'Infojobs',
+          position: 'Frontend Developer',
+          from: '08/2022',
+          to: '05/2023',
+          amountTime: '10 meses',
+          description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a sem ut ipsum convallis pharetra ac at neque. In porttitor, augue quis rhoncus tempor, nibh diam venenatis nunc, sit amet pulvinar diam sapien non dolor
+          Aenean tincidunt enim id rhoncus ornare. Donec eget tellus egestas.`
+        },
+        {
+          company: 'Lorem Company',
+          position: 'Frontend Developer',
+          from: '08/2022',
+          to: '05/2023',
+          amountTime: '10 meses',
+          description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a sem ut ipsum convallis pharetra ac at neque. In porttitor, augue quis rhoncus tempor, nibh diam venenatis nunc, sit amet pulvinar diam sapien non dolor
+          Aenean tincidunt enim id rhoncus ornare. Donec eget tellus egestas.`
+        },
+        {
+          company: 'Lorem Company',
+          position: 'Frontend Developer',
+          from: '08/2022',
+          to: '05/2023',
+          amountTime: '10 meses',
+          description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a sem ut ipsum convallis pharetra ac at neque. In porttitor, augue quis rhoncus tempor, nibh diam venenatis nunc, sit amet pulvinar diam sapien non dolor
+          Aenean tincidunt enim id rhoncus ornare. Donec eget tellus egestas.`
+        },
+        {
+          company: 'Lorem Company',
+          position: 'Frontend Developer',
           from: '08/2022',
           to: '05/2023',
           amountTime: '10 meses',
@@ -286,6 +363,22 @@ export const mock = [
           title: 'Master en Cosas',
           from: '03/20',
           to: '09/22',
+          stillStuding: false,
+          description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a sem ut ipsum convallis pharetra ac at neque. In porttitor, augue quis rhoncus tempor, nibh diam venenatis nunc, sit amet pulvinar diam sapien non dolor
+          Aenean tincidunt enim id rhoncus ornare. Donec eget tellus egestas.`
+        },
+        {
+          title: 'Licenciado en Cosas',
+          from: '03/14',
+          to: '09/19',
+          stillStuding: false,
+          description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a sem ut ipsum convallis pharetra ac at neque. In porttitor, augue quis rhoncus tempor, nibh diam venenatis nunc, sit amet pulvinar diam sapien non dolor
+          Aenean tincidunt enim id rhoncus ornare. Donec eget tellus egestas.`
+        },
+        {
+          title: 'Licenciado en Cosas',
+          from: '03/14',
+          to: '09/19',
           stillStuding: false,
           description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a sem ut ipsum convallis pharetra ac at neque. In porttitor, augue quis rhoncus tempor, nibh diam venenatis nunc, sit amet pulvinar diam sapien non dolor
           Aenean tincidunt enim id rhoncus ornare. Donec eget tellus egestas.`
@@ -316,7 +409,34 @@ export const mock = [
         },
         {
           company: 'Lorem Company',
-          position: 'Infojobs',
+          position: 'Frontend Developer',
+          from: '08/2022',
+          to: '05/2023',
+          amountTime: '10 meses',
+          description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a sem ut ipsum convallis pharetra ac at neque. In porttitor, augue quis rhoncus tempor, nibh diam venenatis nunc, sit amet pulvinar diam sapien non dolor
+          Aenean tincidunt enim id rhoncus ornare. Donec eget tellus egestas.`
+        },
+        {
+          company: 'Lorem Company',
+          position: 'Frontend Developer',
+          from: '08/2022',
+          to: '05/2023',
+          amountTime: '10 meses',
+          description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a sem ut ipsum convallis pharetra ac at neque. In porttitor, augue quis rhoncus tempor, nibh diam venenatis nunc, sit amet pulvinar diam sapien non dolor
+          Aenean tincidunt enim id rhoncus ornare. Donec eget tellus egestas.`
+        },
+        {
+          company: 'Lorem Company',
+          position: 'Frontend Developer',
+          from: '08/2022',
+          to: '05/2023',
+          amountTime: '10 meses',
+          description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a sem ut ipsum convallis pharetra ac at neque. In porttitor, augue quis rhoncus tempor, nibh diam venenatis nunc, sit amet pulvinar diam sapien non dolor
+          Aenean tincidunt enim id rhoncus ornare. Donec eget tellus egestas.`
+        },
+        {
+          company: 'Lorem Company',
+          position: 'Frontend Developer',
           from: '08/2022',
           to: '05/2023',
           amountTime: '10 meses',
@@ -325,6 +445,22 @@ export const mock = [
         }
       ],
       studies: [
+        {
+          title: 'Master en Cosas',
+          from: '03/20',
+          to: '09/22',
+          stillStuding: false,
+          description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a sem ut ipsum convallis pharetra ac at neque. In porttitor, augue quis rhoncus tempor, nibh diam venenatis nunc, sit amet pulvinar diam sapien non dolor
+          Aenean tincidunt enim id rhoncus ornare. Donec eget tellus egestas.`
+        },
+        {
+          title: 'Master en Cosas',
+          from: '03/20',
+          to: '09/22',
+          stillStuding: false,
+          description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a sem ut ipsum convallis pharetra ac at neque. In porttitor, augue quis rhoncus tempor, nibh diam venenatis nunc, sit amet pulvinar diam sapien non dolor
+          Aenean tincidunt enim id rhoncus ornare. Donec eget tellus egestas.`
+        },
         {
           title: 'Master en Cosas',
           from: '03/20',

@@ -4,14 +4,14 @@ import CardsSection from '../CardsSection';
 import { mapItemsCandidate } from '@/app/utils/general';
 import Arrows from '../Arrows';
 
-const HalfScreen = ({ candidateToCompare, right, setActive, active, maxCandidates, select, remove }) => {
+const HalfScreen = ({ candidateToCompare, right, setActive, active, maxCandidates, select, remove, compare, close }) => {
     const back = () => {
         if (!active) return;
         setActive(active - 1);
 
     }
     const foward = () => {
-        if (active === maxCandidates -1) return;
+        if (active === maxCandidates - 1) return;
         setActive(active + 1);
     }
 
@@ -26,9 +26,7 @@ const HalfScreen = ({ candidateToCompare, right, setActive, active, maxCandidate
                     height={100}
                 />
                 <h2 className={styles.name}>{candidateToCompare.name} {candidateToCompare.lastname}</h2>
-                {
-                    right && <Arrows back={back} foward={foward} />
-                }
+                <Arrows back={back} foward={foward} close={close} show={right} />
             </header>
             <h2 className={styles.subtitle}>Experiencia</h2>
             <CardsSection items={mapItemsCandidate(candidateToCompare.experience)} />
@@ -52,6 +50,17 @@ const HalfScreen = ({ candidateToCompare, right, setActive, active, maxCandidate
                             Select
                         </button>
                     )
+
+            }
+            {
+                compare ? (
+                    <button
+                        className={styles.compare}
+                        onClick={() => compare(candidateToCompare.id)}
+                    >
+                        Compare
+                    </button>
+                ) : null
             }
         </div>
     );

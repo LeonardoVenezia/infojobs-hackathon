@@ -36,6 +36,16 @@
     margin-top: 16px;
 }
 
+.compare {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #167db7;
+    color: #fff;
+    margin-top: 16px;
+    margin-left: 12px;
+}
+
 .remove {
     padding: 8px 16px;
     border: none;

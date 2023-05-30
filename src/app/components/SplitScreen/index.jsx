@@ -2,7 +2,7 @@ import styles from './SplitScreen.module.css';
 import HalfScreen from '../HalfScreen';
 import { useState } from 'react';
 
-const SplitScreen = ({ candidateToCompare, candidates, select, selectedCandidates, remove }) => {
+const SplitScreen = ({ candidateToCompare, candidates, select, selectedCandidates, remove, compare, close }) => {
     const [active, setActive] = useState(0);
     if (!candidateToCompare) return;
     const rigthCompare = candidates[active];
@@ -32,6 +32,8 @@ const SplitScreen = ({ candidateToCompare, candidates, select, selectedCandidate
                 maxCandidates={candidates?.length}
                 select={select}
                 remove={hasSelected ? deleteCandidate : null }
+                compare={compare}
+                close={close}
             />
         </article>
     );

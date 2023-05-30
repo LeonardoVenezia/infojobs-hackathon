@@ -62,6 +62,8 @@ export default function Home() {
         select={select}
         remove={remove}
         selectedCandidates={selectedCandidates}
+        compare={compare}
+        close={()=> setCandidateToCompare(false)}
       />
       <BottomList
         candidates={selectedCandidates}
